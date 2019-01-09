@@ -21,6 +21,7 @@ voo(recife, maceio, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(recife, fortaleza, 10.00, 11.20, [seg, qua, sex, dom]).
 
 % Saídas de Salvador
+voo(salvador, sp, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(salvador, recife, 12.3, 17, [seg, ter, qui, sab]).
 voo(salvador, noronha, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(salvador, natal, 10.00, 11.20, [seg, qua, sex, dom]).
@@ -32,8 +33,7 @@ voo(salvador, maceio, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(salvador, fortaleza, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(salvador, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(salvador, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(salvador, sp, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(salvador, rio, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(salvador, rj, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(salvador, bh, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(salvador, vitoria, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(salvador, curitiba, 10.00, 11.20, [seg, qua, sex, dom]).
@@ -208,17 +208,17 @@ voo(belem, sLuis, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(belem, teresina, 10.00, 11.20, [seg, qua, sex, dom]).
 
 % Saídas de Palmas
+voo(palmas, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(palmas, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(palmas, sp, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(palmas, belem, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(palmas, macapa, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(palmas, pVelho, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(palmas, manaus, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(palmas, rBranco, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(palmas, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(palmas, boaVista, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(palmas, teresina, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(palmas, sLuis, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(palmas, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(palmas, sp, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(palmas, goiania, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(palmas, brasilia, 10.00, 11.20, [seg, qua, sex, dom]).
 
@@ -234,17 +234,17 @@ voo(macapa, cGrande, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(macapa, sLuis, 10.00, 11.20, [seg, qua, sex, dom]).
 
 % Saídas de Manaus
-voo(manaus, belem, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(manaus, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(manaus, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(manaus, belem, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(manaus, pVelho, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(manaus, macapa, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(manaus, rBranco, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(manaus, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(manaus, boaVista, 10.00, 11.20, [seg, qua, sex, dom]).
 
 % Saídas de Rio Branco
-voo(rBranco, belem, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(rBranco, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(rBranco, belem, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(rBranco, pVelho, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(rBranco, macapa, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(rBranco, manaus, 10.00, 11.20, [seg, qua, sex, dom]).
@@ -252,8 +252,8 @@ voo(rBranco, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(rBranco, boaVista, 10.00, 11.20, [seg, qua, sex, dom]).
 
 % Saídas de Porto Velho
-voo(pVelho, belem, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(pVelho, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(pVelho, belem, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(pVelho, manaus, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(pVelho, macapa, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(pVelho, rBranco, 10.00, 11.20, [seg, qua, sex, dom]).
@@ -262,19 +262,19 @@ voo(pVelho, boaVista, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(pVelho, cGrande, 10.00, 11.20, [seg, qua, sex, dom]).
 
 % Saídas de Boa Vista
-voo(boaVista, belem, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(boaVista, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(boaVista, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(boaVista, belem, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(boaVista, pVelho, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(boaVista, macapa, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(boaVista, rBranco, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(boaVista, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(boaVista, manaus, 10.00, 11.20, [seg, qua, sex, dom]).
 
 % Saídas de Goiania
-voo(goiania, brasilia, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(goiania, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(goiania, sp, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(goiania, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(goiania, brasilia, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(goiania, cGrande, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(goiania, bh, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(goiania, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
@@ -282,10 +282,10 @@ voo(goiania, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
 % Saídas de Brasilia
 voo(brasilia, goiania, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(brasilia, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(brasilia, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(brasilia, sp, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(brasilia, bh, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(brasilia, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(brasilia, sp, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(brasilia, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(brasilia, bh, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(brasilia, cGrande, 10.00, 11.20, [seg, qua, sex, dom]).
 
 % Saídas de Campo Grande
@@ -302,17 +302,32 @@ voo(cGrande, belem, 10.00, 11.20, [seg, qua, sex, dom]).
 
 % Predicados
 
-% Predicado base que é o de viagem, ainda não considera o horario de chegada nem o de saída.
-viagem(Saida, Destino):-
-    voo(Saida, Destino, _, _, _),
+% Predicado base que é o de viagem, ainda não considera o horario de chegada nem o de partida.
+viagemDireta(Partida, Destino):-
+    voo(Partida, Destino, _, _, _),
     % Nesse write eu quero colocar o caminho inteiro traçado até chegar ao destino
     % Do jeito que está, não funciona corretamente, isso será feito através de um predicado próprio.
-    write("Caminho tracado: "),  
-    write(Saida),
+    write("Caminho tracado: "),
+    write(Partida),
     write(" -> "),
     write(Destino).
 
-viagem(Saida, Destino):-
-    voo(Saida, Escala, _, _, _),
-    viagem(Escala, Destino).
+viagem(Partida, Destino):-
+    viagemDireta(Partida, Destino).
+
+viagem(Partida, Destino):-
+    voo(Partida, Escala, _, _, _),
+    viagemDireta(Escala, Destino).
+
+viagem(Partida, Destino):- 
+    voo(Partida, salvador, _, _, _),
+    viagem(salvador, Destino).
+
+viagem(Partida, Destino):- 
+    voo(Partida, sp, _, _, _),
+    viagem(sp, Destino).
+
+viagem(Partida, Destino):- 
+    voo(Partida, cuiaba, _, _, _),
+    viagem(cuiaba, Destino).
 
