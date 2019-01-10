@@ -26,6 +26,7 @@ voo(recife, fortaleza, 10.00, 11.20, [seg, qua, sex, dom]).
 
 % Saídas de Salvador
 voo(salvador, sp, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(salvador, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(salvador, recife, 12.3, 17, [seg, ter, qui, sab]).
 voo(salvador, noronha, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(salvador, natal, 10.00, 11.20, [seg, qua, sex, dom]).
@@ -35,7 +36,6 @@ voo(salvador, sLuis, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(salvador, aracaju, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(salvador, maceio, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(salvador, fortaleza, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(salvador, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(salvador, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(salvador, rj, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(salvador, bh, 10.00, 11.20, [seg, qua, sex, dom]).
@@ -151,12 +151,12 @@ voo(bh, brasilia, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(bh, goiania, 10.00, 11.20, [seg, qua, sex, dom]).
 
 % Saídas de São Paulo
+voo(sp, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(sp, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(sp, bh, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(sp, rj, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(sp, vitoria, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(sp, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(sp, cGrande, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(sp, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(sp, curitiba, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(sp, florianopolis, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(sp, pAlegre, 10.00, 11.20, [seg, qua, sex, dom]).
@@ -186,6 +186,8 @@ voo(pAlegre, sp, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(pAlegre, cGrande, 10.00, 11.20, [seg, qua, sex, dom]).
 
 % Saídas de Cuiabá
+voo(cuiaba, sp, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(cuiaba, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(cuiaba, belem, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(cuiaba, macapa, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(cuiaba, pVelho, 10.00, 11.20, [seg, qua, sex, dom]).
@@ -194,10 +196,8 @@ voo(cuiaba, rBranco, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(cuiaba, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(cuiaba, boaVista, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(cuiaba, cGrande, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(cuiaba, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(cuiaba, goiania, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(cuiaba, brasilia, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(cuiaba, sp, 10.00, 11.20, [seg, qua, sex, dom]).
 
 % Saídas de Belém
 voo(belem, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
@@ -328,4 +328,3 @@ viagem(Partida, Destino):-
 viagem(Partida, Destino):- 
     voo(Partida, cuiaba, _, _, _),
     viagem(cuiaba, Destino).
-
