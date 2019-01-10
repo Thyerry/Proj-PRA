@@ -1,3 +1,7 @@
+% Projeto Planejador de Rotas Aereas - Paradigmas da Programação 2018.2 - UFRPE 
+%  Grupo - Thyérry Nunes dos Santos
+%          Pedro Rodrigues Bandeira Rocha
+
 % Estrutura de um voo:
 % voo(Cidade1, Cidade2, HorarioSaída, HorarioChegada, DiaDaSemana)
 
@@ -304,13 +308,7 @@ voo(cGrande, belem, 10.00, 11.20, [seg, qua, sex, dom]).
 
 % Predicado base que é o de viagem, ainda não considera o horario de chegada nem o de partida.
 viagemDireta(Partida, Destino):-
-    voo(Partida, Destino, _, _, _),
-    % Nesse write eu quero colocar o caminho inteiro traçado até chegar ao destino
-    % Do jeito que está, não funciona corretamente, isso será feito através de um predicado próprio.
-    write("Caminho tracado: "),
-    write(Partida),
-    write(" -> "),
-    write(Destino).
+    voo(Partida, Destino, _, _, _).
 
 viagem(Partida, Destino):-
     viagemDireta(Partida, Destino).
