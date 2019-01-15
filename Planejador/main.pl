@@ -340,6 +340,3 @@ viagem(Partida, Destino, [Partida|Rota]):-
 viagem(Partida, Destino, [Partida|Rota]):- 
     voo(Partida, cuiaba, _, _, _),
     viagem(cuiaba, Destino, Rota).
-
-
-roteiro(Rota):- true.
