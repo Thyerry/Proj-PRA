@@ -10,12 +10,11 @@
 % Mas ainda não sei se tem como fazer operações com valores desse tipo.
 % Os horarios de chegada e saída dos voos estão sendo tirados do site atravez do link https://www.adistanciaentre.com/Tempo-de-voo.aspx
 
-
 % Axiomas
 
 % Saídas de Recife
-voo(recife, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(recife, noronha, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(recife, salvador, 10.00, 11.20, [seg, qua, sex]).
+voo(recife, noronha, 10.00, 11.20, [qua, sex, dom]).
 voo(recife, natal, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(recife, jPessoa, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(recife, teresina, 10.00, 11.20, [seg, qua, sex, dom]).
@@ -43,6 +42,14 @@ voo(salvador, vitoria, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(salvador, curitiba, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(salvador, brasilia, 10.00, 11.20, [seg, qua, sex, dom]).
 voo(salvador, goiania, 10.00, 11.20, [seg, qua, sex, dom]).
+
+% Saídas de Fernando de Noronha
+voo(noronha, salvador, 10.00, 11.20, [qua, sex, dom]).
+voo(noronha, recife, 10.00, 11.20, [qua, sex, dom]).
+voo(noronha, jPessoa, 10.00, 11.20, [qua, sex, dom]).
+voo(noronha, maceio, 10.00, 11.20, [qua, sex, dom]).
+voo(noronha, aracaju, 10.00, 11.20, [qua, sex, dom]).
+voo(noronha, fortaleza, 10.00, 11.20, [qua, sex, dom]).
 
 % Saídas de João Pessoa
 voo(jPessoa, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
@@ -307,24 +314,32 @@ voo(cGrande, belem, 10.00, 11.20, [seg, qua, sex, dom]).
 % Predicados
 
 % Predicado base que é o de viagem, ainda não considera o horario de chegada nem o de partida.
-viagemDireta(Partida, Destino):-
+% Variáveis são: Partida, indica de onde está saindo 
+%                Destino, indica para onde está indo
+%                Escala, 
+%                Rota, indica uma lista de todas as cidades por onde o viajante passou, incluindo a cidade de partida e o destino.
+
+viagemDireta(Partida, Destino, [Partida, Destino]):-
     voo(Partida, Destino, _, _, _).
 
-viagem(Partida, Destino):-
-    viagemDireta(Partida, Destino).
+viagem(Partida, Destino, [Partida|Rota]):-
+    viagemDireta(Partida, Destino, Rota).
 
-viagem(Partida, Destino):-
+viagem(Partida, Destino, [Partida|Rota]):-
     voo(Partida, Escala, _, _, _),
-    viagemDireta(Escala, Destino).
+    viagemDireta(Escala, Destino, Rota).
 
-viagem(Partida, Destino):- 
+viagem(Partida, Destino, [Partida|Rota]):- 
     voo(Partida, salvador, _, _, _),
-    viagem(salvador, Destino).
+    viagem(salvador, Destino, Rota).
 
-viagem(Partida, Destino):- 
+viagem(Partida, Destino, [Partida|Rota]):- 
     voo(Partida, sp, _, _, _),
-    viagem(sp, Destino).
+    viagem(sp, Destino, Rota).
 
-viagem(Partida, Destino):- 
+viagem(Partida, Destino, [Partida|Rota]):- 
     voo(Partida, cuiaba, _, _, _),
-    viagem(cuiaba, Destino).
+    viagem(cuiaba, Destino, Rota).
+
+
+roteiro(Rota):- true.
