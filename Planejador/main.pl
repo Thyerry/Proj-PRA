@@ -341,6 +341,8 @@ viagem(Partida, Destino, [Partida|Rota]):-
     voo(Partida, cuiaba, _, _, _, _, _),
     viagem(cuiaba, Destino, Rota).
 
+% Predicado que transforma horas em minutos para facilitar
+% o uso do predicado fazEscala.
 horaParaMinuto(Hora, Minuto, Resposta):-
     HoraEmMinutos is Hora * 60,
     Resposta is HoraEmMinutos + Minuto.
@@ -349,6 +351,17 @@ formataHora(Hora, Minuto, Resposta):-
     FMinuto is  Minuto * 0.01,
     Resposta is Hora + FMinuto.
 
+
+% diaCompativel é o predicado que ajuda a encontrar uma escala
+% de viagem.
+diaCompativel([HDias|_], [HDias|_]).
+diaCompativel(Dias, [_|Cauda]):- 
+    diaCompativel(Dias, Cauda).
+diaCompativel([_|Cauda], Dias):- 
+    diaCompativel(Cauda, Dias).
+
+% Predicado que verifica se uma viagem existe, e se sim, 
+% mostra todas suas informações.
 verHorario(Partida, Destino):- 
     voo(Partida, Destino, HPartida, MPartida, HChegada, MChegada, Dias),
     formataHora(HPartida, MPartida, HorarioPartida),
@@ -358,9 +371,11 @@ verHorario(Partida, Destino):-
     write(" -> "),
     writeln(Destino),
     write("Partida: "),
-    writeln(HorarioPartida),
+    write(HorarioPartida),
+    writeln(" hrs"),
     write("Chegada: "),
-    writeln(HorarioChegada),
+    write(HorarioChegada),
+    writeln(" hrs"),
     write("Nos dias: "),
     write(Dias).
 
