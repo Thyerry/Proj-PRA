@@ -3,7 +3,7 @@
 %          Pedro Rodrigues Bandeira Rocha
 
 % Estrutura de um voo:
-% voo(Cidade1, Cidade2, HorarioSaída, HorarioChegada, DiaDaSemana)
+% voo(Cidade1, Cidade2, HoraDeSaída, MinutoDeSaida, HoraDeChegada, Minuto de Chegada, DiasDaSemana)
 
 % Por enquanto, utilizando numeros decimais para representar horas (hh.mm).
 % Isso será modificado, existe uma maneira de escrever horas em prolog, no caso, o time(hh, mm, ss).
@@ -13,303 +13,303 @@
 % Axiomas
 
 % Saídas de Recife
-voo(recife, salvador, 10.00, 11.20, [seg, qua, sex]).
-voo(recife, noronha, 10.00, 11.20, [qua, sex, dom]).
-voo(recife, natal, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(recife, jPessoa, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(recife, teresina, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(recife, sLuis, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(recife, aracaju, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(recife, maceio, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(recife, fortaleza, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(recife, salvador, 10, 00, 11, 20, [seg, qua, sex]).
+voo(recife, noronha, 10, 00, 11, 20, [qua, sex, dom]).
+voo(recife, natal, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(recife, jPessoa, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(recife, teresina, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(recife, sLuis, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(recife, aracaju, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(recife, maceio, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(recife, fortaleza, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Salvador
-voo(salvador, sp, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(salvador, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(salvador, recife, 12.3, 17, [seg, ter, qui, sab]).
-voo(salvador, noronha, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(salvador, natal, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(salvador, jPessoa, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(salvador, teresina, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(salvador, sLuis, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(salvador, aracaju, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(salvador, maceio, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(salvador, fortaleza, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(salvador, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(salvador, rj, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(salvador, bh, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(salvador, vitoria, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(salvador, curitiba, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(salvador, brasilia, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(salvador, goiania, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(salvador, sp, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(salvador, cuiaba, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(salvador, recife, 12, 30, 17, 00, [seg, ter, qui, sab]).
+voo(salvador, noronha, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(salvador, natal, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(salvador, jPessoa, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(salvador, teresina, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(salvador, sLuis, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(salvador, aracaju, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(salvador, maceio, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(salvador, fortaleza, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(salvador, palmas, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(salvador, rj, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(salvador, bh, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(salvador, vitoria, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(salvador, curitiba, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(salvador, brasilia, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(salvador, goiania, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Fernando de Noronha
-voo(noronha, salvador, 10.00, 11.20, [qua, sex, dom]).
-voo(noronha, recife, 10.00, 11.20, [qua, sex, dom]).
-voo(noronha, jPessoa, 10.00, 11.20, [qua, sex, dom]).
-voo(noronha, maceio, 10.00, 11.20, [qua, sex, dom]).
-voo(noronha, aracaju, 10.00, 11.20, [qua, sex, dom]).
-voo(noronha, fortaleza, 10.00, 11.20, [qua, sex, dom]).
+voo(noronha, salvador, 10, 00, 11, 20, [qua, sex, dom]).
+voo(noronha, recife, 10, 00, 11, 20, [qua, sex, dom]).
+voo(noronha, jPessoa, 10, 00, 11, 20, [qua, sex, dom]).
+voo(noronha, maceio, 10, 00, 11, 20, [qua, sex, dom]).
+voo(noronha, aracaju, 10, 00, 11, 20, [qua, sex, dom]).
+voo(noronha, fortaleza, 10, 00, 11, 20, [qua, sex, dom]).
 
 % Saídas de João Pessoa
-voo(jPessoa, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(jPessoa, noronha, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(jPessoa, natal, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(jPessoa, recife, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(jPessoa, teresina, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(jPessoa, sLuis, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(jPessoa, aracaju, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(jPessoa, maceio, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(jPessoa, fortaleza, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(jPessoa, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(jPessoa, noronha, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(jPessoa, natal, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(jPessoa, recife, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(jPessoa, teresina, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(jPessoa, sLuis, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(jPessoa, aracaju, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(jPessoa, maceio, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(jPessoa, fortaleza, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Natal
-voo(natal, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(natal, noronha, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(natal, recife, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(natal, jPessoa, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(natal, teresina, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(natal, sLuis, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(natal, aracaju, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(natal, maceio, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(natal, fortaleza, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(natal, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(natal, noronha, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(natal, recife, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(natal, jPessoa, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(natal, teresina, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(natal, sLuis, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(natal, aracaju, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(natal, maceio, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(natal, fortaleza, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Teresina
-voo(teresina, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(teresina, natal, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(teresina, jPessoa, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(teresina, recife, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(teresina, sLuis, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(teresina, aracaju, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(teresina, maceio, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(teresina, fortaleza, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(teresina, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(teresina, belem, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(teresina, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(teresina, natal, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(teresina, jPessoa, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(teresina, recife, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(teresina, sLuis, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(teresina, aracaju, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(teresina, maceio, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(teresina, fortaleza, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(teresina, palmas, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(teresina, belem, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de São Luis
-voo(sLuis, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(sLuis, natal, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(sLuis, jPessoa, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(sLuis, recife, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(sLuis, teresina, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(sLuis, aracaju, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(sLuis, maceio, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(sLuis, fortaleza, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(sLuis, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(sLuis, belem, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(sLuis, macapa, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(sLuis, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(sLuis, natal, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(sLuis, jPessoa, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(sLuis, recife, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(sLuis, teresina, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(sLuis, aracaju, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(sLuis, maceio, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(sLuis, fortaleza, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(sLuis, palmas, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(sLuis, belem, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(sLuis, macapa, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Maceió
-voo(maceio, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(maceio, noronha, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(maceio, natal, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(maceio, jPessoa, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(maceio, teresina, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(maceio, sLuis, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(maceio, aracaju, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(maceio, recife, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(maceio, fortaleza, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(maceio, vitoria, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(maceio, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(maceio, noronha, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(maceio, natal, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(maceio, jPessoa, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(maceio, teresina, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(maceio, sLuis, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(maceio, aracaju, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(maceio, recife, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(maceio, fortaleza, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(maceio, vitoria, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Aracaju
-voo(aracaju, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(aracaju, noronha, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(aracaju, natal, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(aracaju, jPessoa, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(aracaju, teresina, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(aracaju, sLuis, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(aracaju, recife, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(aracaju, maceio, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(aracaju, fortaleza, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(aracaju, vitoria, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(aracaju, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(aracaju, noronha, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(aracaju, natal, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(aracaju, jPessoa, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(aracaju, teresina, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(aracaju, sLuis, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(aracaju, recife, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(aracaju, maceio, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(aracaju, fortaleza, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(aracaju, vitoria, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Sáidas de Fortaleza
-voo(fortaleza, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(fortaleza, noronha, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(fortaleza, natal, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(fortaleza, jPessoa, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(fortaleza, teresina, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(fortaleza, sLuis, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(fortaleza, aracaju, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(fortaleza, maceio, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(fortaleza, recife, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(fortaleza, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(fortaleza, noronha, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(fortaleza, natal, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(fortaleza, jPessoa, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(fortaleza, teresina, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(fortaleza, sLuis, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(fortaleza, aracaju, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(fortaleza, maceio, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(fortaleza, recife, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Vitoria
-voo(vitoria, sp, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(vitoria, bh, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(vitoria, rj, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(vitoria, aracaju, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(vitoria, maceio, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(vitoria, sp, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(vitoria, bh, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(vitoria, rj, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(vitoria, aracaju, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(vitoria, maceio, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saidas de Rio de Janeiro
-voo(rj, sp, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(rj, bh, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(rj, vitoria, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(rj, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(rj, curitiba, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(rj, florianopolis, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(rj, sp, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(rj, bh, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(rj, vitoria, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(rj, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(rj, curitiba, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(rj, florianopolis, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Belo Horizonte
-voo(bh, sp, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(bh, rj, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(bh, vitoria, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(bh, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(bh, cGrande, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(bh, brasilia, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(bh, goiania, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(bh, sp, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(bh, rj, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(bh, vitoria, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(bh, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(bh, cGrande, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(bh, brasilia, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(bh, goiania, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de São Paulo
-voo(sp, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(sp, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(sp, bh, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(sp, rj, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(sp, vitoria, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(sp, cGrande, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(sp, curitiba, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(sp, florianopolis, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(sp, pAlegre, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(sp, goiania, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(sp, brasilia, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(sp, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(sp, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(sp, cuiaba, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(sp, bh, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(sp, rj, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(sp, vitoria, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(sp, cGrande, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(sp, curitiba, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(sp, florianopolis, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(sp, pAlegre, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(sp, goiania, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(sp, brasilia, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(sp, palmas, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Curitiba
-voo(curitiba, florianopolis, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(curitiba, pAlegre, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(curitiba, sp, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(curitiba, rj, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(curitiba, cGrande, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(curitiba, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(curitiba, florianopolis, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(curitiba, pAlegre, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(curitiba, sp, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(curitiba, rj, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(curitiba, cGrande, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(curitiba, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saída de Florianópolis
-voo(florianopolis, curitiba, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(florianopolis, pAlegre, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(florianopolis, sp, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(florianopolis, rj, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(florianopolis, cGrande, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(florianopolis, curitiba, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(florianopolis, pAlegre, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(florianopolis, sp, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(florianopolis, rj, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(florianopolis, cGrande, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Porto Alegre
-voo(pAlegre, curitiba, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(pAlegre, florianopolis, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(pAlegre, sp, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(pAlegre, cGrande, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(pAlegre, curitiba, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(pAlegre, florianopolis, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(pAlegre, sp, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(pAlegre, cGrande, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Cuiabá
-voo(cuiaba, sp, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(cuiaba, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(cuiaba, belem, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(cuiaba, macapa, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(cuiaba, pVelho, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(cuiaba, manaus, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(cuiaba, rBranco, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(cuiaba, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(cuiaba, boaVista, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(cuiaba, cGrande, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(cuiaba, goiania, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(cuiaba, brasilia, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(cuiaba, sp, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(cuiaba, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(cuiaba, belem, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(cuiaba, macapa, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(cuiaba, pVelho, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(cuiaba, manaus, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(cuiaba, rBranco, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(cuiaba, palmas, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(cuiaba, boaVista, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(cuiaba, cGrande, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(cuiaba, goiania, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(cuiaba, brasilia, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Belém
-voo(belem, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(belem, macapa, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(belem, pVelho, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(belem, manaus, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(belem, rBranco, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(belem, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(belem, boaVista, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(belem, cGrande, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(belem, sLuis, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(belem, teresina, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(belem, cuiaba, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(belem, macapa, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(belem, pVelho, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(belem, manaus, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(belem, rBranco, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(belem, palmas, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(belem, boaVista, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(belem, cGrande, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(belem, sLuis, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(belem, teresina, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Palmas
-voo(palmas, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(palmas, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(palmas, sp, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(palmas, belem, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(palmas, macapa, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(palmas, pVelho, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(palmas, manaus, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(palmas, rBranco, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(palmas, boaVista, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(palmas, teresina, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(palmas, sLuis, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(palmas, goiania, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(palmas, brasilia, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(palmas, cuiaba, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(palmas, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(palmas, sp, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(palmas, belem, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(palmas, macapa, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(palmas, pVelho, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(palmas, manaus, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(palmas, rBranco, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(palmas, boaVista, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(palmas, teresina, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(palmas, sLuis, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(palmas, goiania, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(palmas, brasilia, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saidas de Macapá
-voo(macapa, belem, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(macapa, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(macapa, pVelho, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(macapa, manaus, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(macapa, rBranco, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(macapa, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(macapa, boaVista, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(macapa, cGrande, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(macapa, sLuis, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(macapa, belem, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(macapa, cuiaba, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(macapa, pVelho, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(macapa, manaus, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(macapa, rBranco, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(macapa, palmas, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(macapa, boaVista, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(macapa, cGrande, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(macapa, sLuis, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Manaus
-voo(manaus, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(manaus, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(manaus, belem, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(manaus, pVelho, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(manaus, macapa, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(manaus, rBranco, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(manaus, boaVista, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(manaus, cuiaba, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(manaus, palmas, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(manaus, belem, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(manaus, pVelho, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(manaus, macapa, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(manaus, rBranco, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(manaus, boaVista, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Rio Branco
-voo(rBranco, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(rBranco, belem, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(rBranco, pVelho, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(rBranco, macapa, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(rBranco, manaus, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(rBranco, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(rBranco, boaVista, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(rBranco, cuiaba, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(rBranco, belem, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(rBranco, pVelho, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(rBranco, macapa, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(rBranco, manaus, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(rBranco, palmas, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(rBranco, boaVista, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Porto Velho
-voo(pVelho, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(pVelho, belem, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(pVelho, manaus, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(pVelho, macapa, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(pVelho, rBranco, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(pVelho, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(pVelho, boaVista, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(pVelho, cGrande, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(pVelho, cuiaba, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(pVelho, belem, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(pVelho, manaus, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(pVelho, macapa, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(pVelho, rBranco, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(pVelho, palmas, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(pVelho, boaVista, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(pVelho, cGrande, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Boa Vista
-voo(boaVista, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(boaVista, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(boaVista, belem, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(boaVista, pVelho, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(boaVista, macapa, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(boaVista, rBranco, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(boaVista, manaus, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(boaVista, cuiaba, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(boaVista, palmas, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(boaVista, belem, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(boaVista, pVelho, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(boaVista, macapa, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(boaVista, rBranco, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(boaVista, manaus, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Goiania
-voo(goiania, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(goiania, sp, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(goiania, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(goiania, brasilia, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(goiania, cGrande, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(goiania, bh, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(goiania, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(goiania, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(goiania, sp, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(goiania, cuiaba, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(goiania, brasilia, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(goiania, cGrande, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(goiania, bh, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(goiania, palmas, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Brasilia
-voo(brasilia, goiania, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(brasilia, salvador, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(brasilia, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(brasilia, sp, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(brasilia, palmas, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(brasilia, bh, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(brasilia, cGrande, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(brasilia, goiania, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(brasilia, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(brasilia, cuiaba, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(brasilia, sp, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(brasilia, palmas, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(brasilia, bh, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(brasilia, cGrande, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Campo Grande
-voo(cGrande, cuiaba, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(cGrande, sp, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(cGrande, bh, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(cGrande, curitiba, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(cGrande, florianopolis, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(cGrande, pAlegre, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(cGrande, pVelho, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(cGrande, goiania, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(cGrande, brasilia, 10.00, 11.20, [seg, qua, sex, dom]).
-voo(cGrande, belem, 10.00, 11.20, [seg, qua, sex, dom]).
+voo(cGrande, cuiaba, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(cGrande, sp, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(cGrande, bh, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(cGrande, curitiba, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(cGrande, florianopolis, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(cGrande, pAlegre, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(cGrande, pVelho, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(cGrande, goiania, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(cGrande, brasilia, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(cGrande, belem, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Predicados
 
@@ -320,23 +320,53 @@ voo(cGrande, belem, 10.00, 11.20, [seg, qua, sex, dom]).
 %                Rota, indica uma lista de todas as cidades por onde o viajante passou, incluindo a cidade de partida e o destino.
 
 viagemDireta(Partida, Destino, [Partida, Destino]):-
-    voo(Partida, Destino, _, _, _).
+    voo(Partida, Destino, _, _, _, _, _).
 
 viagem(Partida, Destino, [Partida|Rota]):-
     viagemDireta(Partida, Destino, Rota).
 
 viagem(Partida, Destino, [Partida|Rota]):-
-    voo(Partida, Escala, _, _, _),
+    voo(Partida, Escala, _, _, _, _, _),
     viagemDireta(Escala, Destino, Rota).
 
 viagem(Partida, Destino, [Partida|Rota]):- 
-    voo(Partida, salvador, _, _, _),
+    voo(Partida, salvador, _, _, _, _, _),
     viagem(salvador, Destino, Rota).
 
 viagem(Partida, Destino, [Partida|Rota]):- 
-    voo(Partida, sp, _, _, _),
+    voo(Partida, sp, _, _, _, _, _),
     viagem(sp, Destino, Rota).
 
 viagem(Partida, Destino, [Partida|Rota]):- 
-    voo(Partida, cuiaba, _, _, _),
+    voo(Partida, cuiaba, _, _, _, _, _),
     viagem(cuiaba, Destino, Rota).
+
+horaParaMinuto(Hora, Minuto, Resposta):-
+    HoraEmMinutos is Hora * 60,
+    Resposta is HoraEmMinutos + Minuto.
+
+formataHora(Hora, Minuto, Resposta):-
+    FMinuto is  Minuto * 0.01,
+    Resposta is Hora + FMinuto.
+
+verHorario(Saida, Destino):- 
+    voo(Saida, Destino, HSaida, MSaida, HChegada, MChegada, Dias),
+    formataHora(HSaida, MSaida, HorarioSaida),
+    formataHora(HChegada, MChegada, HorarioChegada),
+    write("Horario de saida da viagem "),
+    write(Saida),
+    write(" -> "),
+    writeln(Destino),
+    write("Saida: "),
+    writeln(HorarioSaida),
+    write("Chegada: "),
+    writeln(HorarioChegada),
+    write("Nos dias: "),
+    write(Dias).
+
+verHorario(Saida, Destino):- 
+    write("Nao existe uma viagem direta entre "),
+    write(Saida),
+    write(" e "),
+    write(Destino),
+    write("!").
