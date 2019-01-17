@@ -13,65 +13,66 @@
 % Axiomas
 
 % Saídas de Recife
-voo(recife, salvador, 10, 00, 11, 20, [seg, qua, sab]).
-voo(recife, noronha, 10, 00, 11, 20, [qua, qui, dom]).
-voo(recife, natal, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(recife, joaoPessoa, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(recife, teresina, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(recife, saoLuis, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(recife, aracaju, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(recife, maceio, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(recife, fortaleza, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(recife, salvador, 10, 00, 11, 20, [qua, sex, dom]).
+voo(recife, noronha, 09, 00, 10, 10, [dom, qua, qui]).
+voo(recife, natal, 17, 20, 18, 10, [dom, ter, sab]).
+voo(recife, joaoPessoa, 18, 10, 18, 50, [dom, seg, qui]).
+voo(recife, teresina, 18, 45, 20, 15, [qui, sex, sab]).
+voo(recife, saoLuis, 22, 30, 00, 20, [seg, sex, sab]).
+voo(recife, aracaju, 02, 35, 3, 35, [dom, seg, sex]).
+voo(recife, maceio, 03, 55, 04, 40, [dom, seg, qui]).
+voo(recife, fortaleza, 16, 25, 17, 40, [dom, qua, sex]).
 
 % Saídas de Salvador
 voo(salvador, saoPaulo, 12, 10, 14, 28, [seg, qua, sex, dom]).
 voo(salvador, cuiaba, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(salvador, recife, 12, 30, 17, 00, [seg, ter, qui, sab]).
-voo(salvador, noronha, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(salvador, natal, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(salvador, joaoPessoa, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(salvador, teresina, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(salvador, saoLuis, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(salvador, aracaju, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(salvador, maceio, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(salvador, fortaleza, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(salvador, palmas, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(salvador, rioDeJaneiro, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(salvador, beloHorizonte, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(salvador, vitoria, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(salvador, curitiba, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(salvador, brasilia, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(salvador, goiania, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(salvador, recife, 12, 30, 17, 00, [ter, qui, sex]).
+voo(salvador, noronha, 10, 00, 11, 20, [dom, ter, sab]).
+voo(salvador, natal, 10, 00, 11, 20, [ter, qui, sex]).
+voo(salvador, joaoPessoa, 10, 00, 11, 20, [ter, qua, sab]).
+voo(salvador, teresina, 10, 00, 11, 20, [seg, qui, sex]).
+voo(salvador, saoLuis, 10, 00, 11, 20, [seg, ter, qua]).
+voo(salvador, aracaju, 10, 00, 11, 20, [seg, ter, qui]).
+voo(salvador, maceio, 10, 00, 11, 20, [dom, ter, qua]).
+voo(salvador, fortaleza, 10, 00, 11, 20, [seg, qua, sab]).
+voo(salvador, palmas, 10, 00, 11, 20, [qui, sex, sab]).
+voo(salvador, rioDeJaneiro, 10, 00, 11, 20, [dom, seg, ter]).
+voo(salvador, beloHorizonte, 10, 00, 11, 20, [seg, qui, sab]).
+voo(salvador, vitoria, 10, 00, 11, 20, [seg, ter, qui]).
+voo(salvador, curitiba, 10, 00, 11, 20, [seg, qui, sex]).
+voo(salvador, brasilia, 10, 00, 11, 20, [dom, ter, sab]).
+voo(salvador, goiania, 10, 00, 11, 20, [seg, ter, sab]).
 
 % Saídas de Fernando de Noronha
-voo(noronha, salvador, 10, 00, 11, 20, [qua, sex, dom]).
-voo(noronha, recife, 10, 00, 11, 20, [qua, sex, dom]).
-voo(noronha, joaoPessoa, 10, 00, 11, 20, [qua, sex, dom]).
-voo(noronha, maceio, 10, 00, 11, 20, [qua, sex, dom]).
-voo(noronha, aracaju, 10, 00, 11, 20, [qua, sex, dom]).
-voo(noronha, fortaleza, 10, 00, 11, 20, [qua, sex, dom]).
+voo(noronha, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(noronha, recife, 10, 00, 11, 20, [ter, qua, qui]).
+voo(noronha, joaoPessoa, 10, 00, 11, 20, [dom, qua, sab]).
+voo(noronha, maceio, 10, 00, 11, 20, [dom, ter, qui]).
+voo(noronha, aracaju, 10, 00, 11, 20, [dom, qui, sex]).
+voo(noronha, fortaleza, 10, 00, 11, 20, [dom, seg, sex]).
+voo(noronha, fortaleza, 10, 00, 11, 20, [seg, qua, sex]).
 
 % Saídas de João Pessoa
-voo(joaoPessoa, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(joaoPessoa, noronha, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(joaoPessoa, natal, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(joaoPessoa, recife, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(joaoPessoa, teresina, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(joaoPessoa, saoLuis, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(joaoPessoa, aracaju, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(joaoPessoa, maceio, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(joaoPessoa, fortaleza, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(joaoPessoa, salvador, 10, 00, 11, 20, [qui, sex, sab]).
+voo(joaoPessoa, noronha, 10, 00, 11, 20, [dom, ter, sab]).
+voo(joaoPessoa, natal, 10, 00, 11, 20, [ter, qui, sab]).
+voo(joaoPessoa, recife, 10, 00, 11, 20, [dom, sex, sab]).
+voo(joaoPessoa, teresina, 10, 00, 11, 20, [seg, sex, sab]).
+voo(joaoPessoa, saoLuis, 10, 00, 11, 20, [ter, qui, sex]).
+voo(joaoPessoa, aracaju, 10, 00, 11, 20, [ter, sex, sab]).
+voo(joaoPessoa, maceio, 10, 00, 11, 20, [seg, qua, sab]).
+voo(joaoPessoa, fortaleza, 10, 00, 11, 20, [qua, sex, sab]).
 
 % Saídas de Natal
-voo(natal, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(natal, noronha, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(natal, recife, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(natal, joaoPessoa, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(natal, teresina, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(natal, saoLuis, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(natal, aracaju, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(natal, maceio, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(natal, fortaleza, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(natal, salvador, 10, 00, 11, 20, [seg, ter, qua, qui, sex, dom]).
+voo(natal, noronha, 10, 00, 11, 20, [ter, sex, sab]).
+voo(natal, recife, 10, 00, 11, 20, [ter, qua, sab]).
+voo(natal, joaoPessoa, 10, 00, 11, 20, [dom, seg, sex]).
+voo(natal, teresina, 10, 00, 11, 20, [dom, ter, sex]).
+voo(natal, saoLuis, 10, 00, 11, 20, [qua, sex, sab]).
+voo(natal, aracaju, 10, 00, 11, 20, [seg, qua, sex]).
+voo(natal, maceio, 10, 00, 11, 20, [ter, qua, sex]).
+voo(natal, fortaleza, 10, 00, 11, 20, [ter, qua, qui]).
 
 % Saídas de Teresina
 voo(teresina, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
@@ -319,31 +320,24 @@ voo(campoGrande, belem, 10, 00, 11, 20, [seg, qua, sex, dom]).
 %                Escala, 
 %                Rota, indica uma lista de todas as cidades por onde o viajante passou, incluindo a cidade de partida e o destino.
 
-viagemDireta(Partida, Destino, Dia, [Partida, Destino]):-
+viagem(Partida, Destino, Dia, Rota):-
+    processoViagem(Partida, Destino, Dia,[Partida], Rota).
+
+viagem(Partida, Destino, Dia, Rota):- 
+    verHorario(Partida, Destino), fail.
+
+processoViagem(Partida, Destino, Dia, Aux, [Partida, Destino]):-
     voo(Partida, Destino, _, _, _, _, Dias),
     diaCompativel(Dia, Dias).
 
-viagem(Partida, Destino, Dia, [Partida, Destino]):-
-    voo(Partida, Destino, _, _, _, _, Dias),
-    diaCompativel(Dia, Dias).
-
-viagem(Partida, Destino, Dia, [Partida|Rota]):-
+processoViagem(Partida, Destino, Dia, Aux,[Partida|Rota]):-
     voo(Partida, Escala, _, _, _, _, Dias),
     diaCompativel(Dia, Dias),
-    viagem(Escala, Destino, Dia, Rota),
+    not(jaVisitado(Escala, Aux)),
+    processoViagem(Escala, Destino, Dia,[Escala|Aux], Rota),
     verificaEscala(Partida, Escala, Rota).
 
-/*viagem(Partida, Destino, [Partida|Rota]):- 
-    voo(Partida, salvador, _, _, _, _, _),
-    viagem(salvador, Destino, Rota).
 
-viagem(Partida, Destino, [Partida|Rota]):- 
-    voo(Partida, saoPaulo, _, _, _, _, _),
-    viagem(saoPaulo, Destino, Rota).
-
-viagem(Partida, Destino, [Partida|Rota]):- 
-    voo(Partida, cuiaba, _, _, _, _, _),
-    viagem(cuiaba, Destino, Rota).*/
 
 verificaEscala(Partida, Escala, [_, X|_]):-
     voo(Partida, Escala, _, _, HChegada, MChegada, _),
@@ -378,8 +372,6 @@ formataHora(Hora, Minuto, Resposta):-
 diaCompativel(Dia, [Dia|_]).
 diaCompativel(Dia, [_|Cauda]):- 
     diaCompativel(Dia, Cauda).
-/*diaCompativel([_|Cauda], Dias):- 
-    diaCompativel(Cauda, Dias).*/
 
 % Predicado que verifica se uma viagem existe, e se sim, 
 % mostra todas suas informações.
@@ -406,3 +398,6 @@ verHorario(Partida, Destino):-
     write(" e "),
     write(Destino),
     write("!").
+
+jaVisitado(Cidade, [Cidade|_]).
+jaVisitado(Cidade, [_|Lista]):- jaVisitado(Cidade, Lista).
