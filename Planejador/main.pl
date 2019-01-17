@@ -341,12 +341,30 @@ viagem(Partida, Destino, [Partida|Rota]):-
     voo(Partida, cuiaba, _, _, _, _, _),
     viagem(cuiaba, Destino, Rota).
 
+verificaEscala(Saida, Escala, [_, X|_]):-
+    voo(Saida, Escala, _, _, HChegada, MChegada, Dias1),
+    voo(Escala, X, HPartida, MPartida, _, _, Dias2),
+    horaParaMinuto(HChegada, MChegada, Tempo1),
+    horaParaMinuto(HPartida, MPartida, Tempo2),
+    verificaTempo(Tempo1, Tempo2),
+    diaCompativel(Dias1, Dias2).
+
+verificaTempo(Tempo1, Tempo2):- 
+    Tempo1 > Tempo2,
+    Tempo3 is Tempo1 + 1440,
+    Tempo3 - Tempo2 >= 50,
+    true.
+
+verificaTempo(Tempo1, Tempo2):-
+    Tempo2 - Tempo1 >= 50,
+    true.
 % Predicado que transforma horas em minutos para facilitar
 % o uso do predicado fazEscala.
 horaParaMinuto(Hora, Minuto, Resposta):-
     HoraEmMinutos is Hora * 60,
     Resposta is HoraEmMinutos + Minuto.
 
+% Predicado que formata a hora
 formataHora(Hora, Minuto, Resposta):-
     FMinuto is  Minuto * 0.01,
     Resposta is Hora + FMinuto.

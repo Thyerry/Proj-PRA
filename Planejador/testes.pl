@@ -16,26 +16,35 @@ dias1([seg, ter, sex, sab]).
 dias2([ter, qua, qui]).
 
 voo(recife, salvador, 10, 01, 11, 20, [seg, qua, sex, dom]).
-voo(salvador, sp, 11, 20, 12, 38, [seg, qua, sex, dom]).
-voo(sp, bh, 12, 38, 14, 44, [seg, qua, sex, dom]).
-
-travel(Saida, Destino, [Saida, Destino]):-
-    voo(Saida, Destino, _, _, _, _, _).
-
-
+voo(salvador, sp, 12, 20, 13, 38, [ter, qui, sab, dom]).
+voo(salvador, bh, 11, 20, 13, 38, [ter, qui, sab, dom]).
+voo(sp, bh, 14, 38, 17, 44, [seg, qua, sex, dom]).
 
 viagem(Saida, Destino, [Saida, Destino]):-
     voo(Saida, Destino, _, _, _, _, _).
 
 viagem(Saida, Destino, [Saida|Rota]):-
     voo(Saida, Escala, HP1, MP1, HC1, MC1, Dias1), 
-    viagem(Escala, Destino, Rota).
+    viagem(Escala, Destino, Rota),
+    verificaEscala(Saida, Escala, Rota).
     
+verificaEscala(Saida, Escala, [_, X|_]):-
+    voo(Saida, Escala, _, _, HChegada, MChegada, Dias1),
+    voo(Escala, X, HPartida, MPartida, _, _, Dias2),
+    horaParaMinuto(HChegada, MChegada, Tempo1),
+    horaParaMinuto(HPartida, MPartida, Tempo2),
+    verificaTempo(Tempo1, Tempo2),
+    diaCompativel(Dias1, Dias2).
 
-fazEscala(Saida, Escala):-
-    voo(Saida, Escala, HP2, MP2, HC2, MC2, Dias2),
-    horaParaMinuto(HC1, MC1, Tempo1),
-    horaParaMinuto(HP2, MP2, Tempo2).
+verificaTempo(Tempo1, Tempo2):- 
+    Tempo1 > Tempo2,
+    Tempo3 is Tempo1 + 1440,
+    Tempo3 - Tempo2 > 50,
+    true.
+
+verificaTempo(Tempo1, Tempo2):-
+    Tempo2 - Tempo1 >= 50,
+    true.
 
 diaCompativel([HDias|_], [HDias|_]).
 diaCompativel(Dias, [_|Cauda]):- diaCompativel(Dias, Cauda).
