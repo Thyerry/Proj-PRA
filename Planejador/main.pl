@@ -13,8 +13,8 @@
 % Axiomas
 
 % Saídas de Recife
-voo(recife, salvador, 10, 00, 11, 20, [seg, qua, sex]).
-voo(recife, noronha, 10, 00, 11, 20, [qua, sex, dom]).
+voo(recife, salvador, 10, 00, 11, 20, [seg, qua, sab]).
+voo(recife, noronha, 10, 00, 11, 20, [qua, qui, dom]).
 voo(recife, natal, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(recife, joaoPessoa, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(recife, teresina, 10, 00, 11, 20, [seg, qua, sex, dom]).
@@ -24,7 +24,7 @@ voo(recife, maceio, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(recife, fortaleza, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Salvador
-voo(salvador, sp, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(salvador, saoPaulo, 12, 10, 14, 28, [seg, qua, sex, dom]).
 voo(salvador, cuiaba, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(salvador, recife, 12, 30, 17, 00, [seg, ter, qui, sab]).
 voo(salvador, noronha, 10, 00, 11, 20, [seg, qua, sex, dom]).
@@ -134,14 +134,14 @@ voo(fortaleza, maceio, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(fortaleza, recife, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Vitoria
-voo(vitoria, sp, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(vitoria, saoPaulo, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(vitoria, beloHorizonte, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(vitoria, rioDeJaneiro, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(vitoria, aracaju, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(vitoria, maceio, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saidas de Rio de Janeiro
-voo(rioDeJaneiro, sp, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(rioDeJaneiro, saoPaulo, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(rioDeJaneiro, beloHorizonte, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(rioDeJaneiro, vitoria, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(rioDeJaneiro, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
@@ -149,7 +149,7 @@ voo(rioDeJaneiro, curitiba, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(rioDeJaneiro, florianopolis, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Belo Horizonte
-voo(beloHorizonte, sp, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(beloHorizonte, saoPaulo, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(beloHorizonte, rioDeJaneiro, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(beloHorizonte, vitoria, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(beloHorizonte, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
@@ -158,23 +158,23 @@ voo(beloHorizonte, brasilia, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(beloHorizonte, goiania, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de São Paulo
-voo(sp, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(sp, cuiaba, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(sp, beloHorizonte, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(sp, rioDeJaneiro, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(sp, vitoria, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(sp, campoGrande, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(sp, curitiba, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(sp, florianopolis, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(sp, portoAlegre, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(sp, goiania, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(sp, brasilia, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(sp, palmas, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(saoPaulo, cuiaba, 13, 00, 11, 20, [seg, qua, sex, dom]).
+voo(saoPaulo, salvador, 12, 20, 14, 38, [seg, qua, sex, dom]).
+voo(saoPaulo, beloHorizonte, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(saoPaulo, rioDeJaneiro, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(saoPaulo, vitoria, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(saoPaulo, campoGrande, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(saoPaulo, curitiba, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(saoPaulo, florianopolis, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(saoPaulo, portoAlegre, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(saoPaulo, goiania, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(saoPaulo, brasilia, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(saoPaulo, palmas, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Curitiba
 voo(curitiba, florianopolis, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(curitiba, portoAlegre, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(curitiba, sp, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(curitiba, saoPaulo, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(curitiba, rioDeJaneiro, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(curitiba, campoGrande, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(curitiba, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
@@ -182,19 +182,19 @@ voo(curitiba, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
 % Saída de Florianópolis
 voo(florianopolis, curitiba, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(florianopolis, portoAlegre, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(florianopolis, sp, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(florianopolis, saoPaulo, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(florianopolis, rioDeJaneiro, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(florianopolis, campoGrande, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Porto Alegre
 voo(portoAlegre, curitiba, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(portoAlegre, florianopolis, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(portoAlegre, sp, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(portoAlegre, saoPaulo, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(portoAlegre, campoGrande, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Cuiabá
-voo(cuiaba, sp, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(cuiaba, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(cuiaba, saoPaulo, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(cuiaba, belem, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(cuiaba, macapa, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(cuiaba, portoVelho, 10, 00, 11, 20, [seg, qua, sex, dom]).
@@ -221,7 +221,7 @@ voo(belem, teresina, 10, 00, 11, 20, [seg, qua, sex, dom]).
 % Saídas de Palmas
 voo(palmas, cuiaba, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(palmas, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(palmas, sp, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(palmas, saoPaulo, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(palmas, belem, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(palmas, macapa, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(palmas, portoVelho, 10, 00, 11, 20, [seg, qua, sex, dom]).
@@ -283,7 +283,7 @@ voo(boaVista, manaus, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Goiania
 voo(goiania, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(goiania, sp, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(goiania, saoPaulo, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(goiania, cuiaba, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(goiania, brasilia, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(goiania, campoGrande, 10, 00, 11, 20, [seg, qua, sex, dom]).
@@ -294,14 +294,14 @@ voo(goiania, palmas, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(brasilia, goiania, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(brasilia, salvador, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(brasilia, cuiaba, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(brasilia, sp, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(brasilia, saoPaulo, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(brasilia, palmas, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(brasilia, beloHorizonte, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(brasilia, campoGrande, 10, 00, 11, 20, [seg, qua, sex, dom]).
 
 % Saídas de Campo Grande
 voo(campoGrande, cuiaba, 10, 00, 11, 20, [seg, qua, sex, dom]).
-voo(campoGrande, sp, 10, 00, 11, 20, [seg, qua, sex, dom]).
+voo(campoGrande, saoPaulo, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(campoGrande, beloHorizonte, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(campoGrande, curitiba, 10, 00, 11, 20, [seg, qua, sex, dom]).
 voo(campoGrande, florianopolis, 10, 00, 11, 20, [seg, qua, sex, dom]).
@@ -319,35 +319,38 @@ voo(campoGrande, belem, 10, 00, 11, 20, [seg, qua, sex, dom]).
 %                Escala, 
 %                Rota, indica uma lista de todas as cidades por onde o viajante passou, incluindo a cidade de partida e o destino.
 
-viagemDireta(Partida, Destino, [Partida, Destino]):-
-    voo(Partida, Destino, _, _, _, _, _).
+viagemDireta(Partida, Destino, Dia, [Partida, Destino]):-
+    voo(Partida, Destino, _, _, _, _, Dias),
+    diaCompativel(Dia, Dias).
 
-viagem(Partida, Destino, [Partida|Rota]):-
-    viagemDireta(Partida, Destino, Rota).
+viagem(Partida, Destino, Dia, [Partida, Destino]):-
+    voo(Partida, Destino, _, _, _, _, Dias),
+    diaCompativel(Dia, Dias).
 
-viagem(Partida, Destino, [Partida|Rota]):-
-    voo(Partida, Escala, _, _, _, _, _),
-    viagemDireta(Escala, Destino, Rota).
+viagem(Partida, Destino, Dia, [Partida|Rota]):-
+    voo(Partida, Escala, _, _, _, _, Dias),
+    diaCompativel(Dia, Dias),
+    viagem(Escala, Destino, Dia, Rota),
+    verificaEscala(Partida, Escala, Rota).
 
-viagem(Partida, Destino, [Partida|Rota]):- 
+/*viagem(Partida, Destino, [Partida|Rota]):- 
     voo(Partida, salvador, _, _, _, _, _),
     viagem(salvador, Destino, Rota).
 
 viagem(Partida, Destino, [Partida|Rota]):- 
-    voo(Partida, sp, _, _, _, _, _),
-    viagem(sp, Destino, Rota).
+    voo(Partida, saoPaulo, _, _, _, _, _),
+    viagem(saoPaulo, Destino, Rota).
 
 viagem(Partida, Destino, [Partida|Rota]):- 
     voo(Partida, cuiaba, _, _, _, _, _),
-    viagem(cuiaba, Destino, Rota).
+    viagem(cuiaba, Destino, Rota).*/
 
-verificaEscala(Saida, Escala, [_, X|_]):-
-    voo(Saida, Escala, _, _, HChegada, MChegada, Dias1),
-    voo(Escala, X, HPartida, MPartida, _, _, Dias2),
+verificaEscala(Partida, Escala, [_, X|_]):-
+    voo(Partida, Escala, _, _, HChegada, MChegada, _),
+    voo(Escala, X, HPartida, MPartida, _, _, _),
     horaParaMinuto(HChegada, MChegada, Tempo1),
     horaParaMinuto(HPartida, MPartida, Tempo2),
-    verificaTempo(Tempo1, Tempo2),
-    diaCompativel(Dias1, Dias2).
+    verificaTempo(Tempo1, Tempo2).
 
 verificaTempo(Tempo1, Tempo2):- 
     Tempo1 > Tempo2,
@@ -372,11 +375,11 @@ formataHora(Hora, Minuto, Resposta):-
 
 % diaCompativel é o predicado que ajuda a encontrar uma escala
 % de viagem.
-diaCompativel([HDias|_], [HDias|_]).
-diaCompativel(Dias, [_|Cauda]):- 
-    diaCompativel(Dias, Cauda).
-diaCompativel([_|Cauda], Dias):- 
-    diaCompativel(Cauda, Dias).
+diaCompativel(Dia, [Dia|_]).
+diaCompativel(Dia, [_|Cauda]):- 
+    diaCompativel(Dia, Cauda).
+/*diaCompativel([_|Cauda], Dias):- 
+    diaCompativel(Cauda, Dias).*/
 
 % Predicado que verifica se uma viagem existe, e se sim, 
 % mostra todas suas informações.
