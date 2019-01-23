@@ -17,7 +17,7 @@ Se você quer ir de Recife até São Paulo, esse programa ira traçar uma rota d
 ## Como usar :gear:
   •Abra o Planejador/main.pl no interpretador prolog que preferir.
   
-  •Insira o predicado: **viagem(cidadePartida, cidadeDestino, diaSemana, Rota)**.
+  •Insira o predicado: `viagem(cidadePartida, cidadeDestino, diaSemana, Rota).`
    
    •As cidades disponíveis nesse projeto são todas as capitais do Brasil, incluindo Brasilia e Fernando De Noronha.
    
